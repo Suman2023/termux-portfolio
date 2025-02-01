@@ -1,0 +1,55 @@
+.layout-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h-100{
+    height: 100vh;
+}
+
+.player-background{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.6;
+    filter: blur(10px);
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.thumbnail{
+    height: 260px;
+    width: 300px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.description{
+    height: 40px;
+    width: 300px;
+    background-color: gainsboro;
+    .title{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-weight: bold;
+        text-transform: capitalize;
+       margin-left: 4px;
+    }
+
+    .album{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-transform: capitalize;
+       margin-left: 4px;
+
+    }
+}
+
+.audio-controls{
+    height: 40px;
+    width: 300px;
+}

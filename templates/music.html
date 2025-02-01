@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radomly Arijit</title>
+    <link href="{{ url_for('static', path='/music.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="player-background" style="background-image: url('{{ album_art }}');"></div>
+    <div class="layout-center h-100">
+        <div class="thumbnail">
+            <img class="thumbnail" src="{{ album_art }}" height="100%" width="100%" alt="">
+        </div>
+        <div class="description">
+            <div class="title">{{title}}</div>
+            <div class="album">{{album}}</div>
+        </div>
+        <audio controls class="audio-controls">
+            <source src="{{ file }}" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+</body>
+
+</html>
